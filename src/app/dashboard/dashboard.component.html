@@ -1,0 +1,291 @@
+<body [hidden]="!isShow">
+
+    <div class="wrapper">
+        <mat-sidenav-container>
+            <mat-sidenav [(opened)]="opened">
+                <button (click)="opened=!opened"
+                    style="left: 377px; background-color:white; border: white; position: absolute; top: 20px; font-size: 30px; height: 22px; width: 22px;">
+                    <img src="assets/cross.png"></button>
+                <router-outlet></router-outlet>
+            </mat-sidenav>
+            <mat-sidenav-content>
+
+                <mat-toolbar style="background-color: #003167; width: 100%;">
+                    <button (click)=" opened=!opened"
+                        style="color: white; background-color: #003167 ; border: #003167; font-family: poppins;">
+                        <img src="assets/bar.png" routerLink="sidenav">
+                        Menu
+                    </button>
+                    <img src="assets/icon.png" style="padding-left: 40% ; height:45px;  ">
+                    <img src="assets/refresh.png" style="position: absolute;
+             left: 700px;
+            top: 10px;
+            height: 24.40493392944336px;
+width: 31.20242691040039px;
+
+            ">
+                    <button class="close" type="button" (click)="featureHide()" style="background-color:#003167 ;position: absolute;
+           border: #003167;
+            left: 730px;
+            top: 6px;
+            "><img src="assets/crosss.png" style=" width: 36px;
+            height: 32px;"> </button>
+
+                </mat-toolbar>
+
+                <div class="home-content">
+                    <div class="overview-boxes" style="font-size: poppins;">
+                        <div class="box">
+                            <div class="left-side">
+                                <div class="box_topic">Average Monthly Sales</div>
+                                <div class="number">235</div>
+
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="left-side">
+                                <div class="box_topic">Average Sales Rank</div>
+                                <div class="number">270,483</div>
+
+                            </div>
+
+                        </div>
+                        <div class="box">
+                            <div class="left-side">
+                                <div class="box_topic">Average Price</div>
+                                <div class="number">6472.45</div>
+
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="left-side">
+                                <div class="box_topic">Average Rating Number</div>
+                                <div class="number">38273</div>
+
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="left-side">
+                                <div class="box_topic" style="padding-bottom:0px ;">Opportunity Score</div>
+                                <!--<div class="number">
+                <div>
+                  <img src="assets/circle.jpg" style=" 
+                justify-content: center; left: 1080px;
+  top: 80px; position: absolute;  ">
+                  <div style="position: absolute;
+                  width: 23px;
+                    height: 54px;
+                  left: 1095px;
+                  top: 97px;">5</div>
+                </div>
+                <h2 style="font-weight: 20px;left: 1140px;
+                top: 75px; position: absolute;">High Demand</h2>
+                <p style="font-size: 14px;left: 1140px;
+                top: 100px; position:absolute">With low comp</p>
+              </div>-->
+                                <div class="number">
+                                    <div style="border: 3px solid #003167; border-radius: 50px; display: flex; width: 10%;
+                justify-content: center; padding: 10px; font-size: 10px; ">
+                                        5
+                                    </div>
+                                    <h2 style="padding-left: 10px;font-weight: 20px; font-size: 8px;">High
+                                        Demand
+                                    </h2><br>
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <body>
+
+                    <table id="customers">
+                        <tr>
+                            <th style="font-size: 28px; font-weight: 600; color: #0076ff; padding-left:25px ; ">
+                                #<i class="fa fa-caret-up" aria-hidden="true " style="font-size: 25px;position: absolute;
+                width: 17px;
+                height: 17px;
+                left: 53px;
+                top: 30px; "></i></th>
+                            <th>Actions</th>
+                            <th>Product Name <img src="assets/Group 3.png"
+                                    style="float: right; height: 10px; width: 10px;">
+                            </th>
+                            <th>Brand <img src="assets/Group 3.png" style="float:right ;height: 10px; width: 10px;">
+                            </th>
+                            <th>Price <img src="assets/Group 3.png" style="float: right ;height: 10px; width: 10px;">
+                            </th>
+                            <th>Mo. Sales <img src="assets/Group 3.png" style="float: right;height: 10px; width: 10px;">
+                            </th>
+                            <th>D. Sales <img src="assets/Group 3.png" style="float: right;height: 10px; width: 10px;">
+                            </th>
+                            <th>MO. Revenue <img src="assets/Group 3.png" style="float: right;height: 10px; width: 10px;
+              "></th>
+                            <th>Date First Available <img src="assets/Group 3.png"
+                                    style="float: right ;height: 10px; width: 10px;"></th>
+                            <th>Net</th>
+                        </tr>
+                        <tr>
+                            <td style="padding-left: 50px ;" data-label="#">1</td>
+                            <td data-label="Actions"><img src="assets/add (2).png">
+                                <img src="assets/key (2).png">
+                                <img src="assets/tag (2).png">
+                            </td>
+                            <td data-label="Product Name"><img src="assets/mobile.jpg"
+                                    style="height:40px ; width:30px; ;">
+                                POCO Android
+                            </td>
+                            <td data-label="Brand">Camoro</td>
+                            <td data-label="Price">$14.00</td>
+                            <td data-label="Mo.Sales">134</td>
+                            <td data-label="D. Sales">134</td>
+                            <td data-label="Mo. Revenue">134</td>
+                            <td data-label="Date First Available">21-06-2022</td>
+                            <td data-label="Net">$90</td>
+                        </tr>
+                        <tr style="font-family:poppins ; ">
+                            <td style=" padding-left:50px ;" data-label="#">2</td>
+                            <td data-label="Actions"><img src="assets/add (2).png">
+                                <img src="assets/key (2).png">
+                                <img src="assets/tag (2).png">
+                            </td>
+                            <td data-label="Product Name"><img src="assets/mobile.jpg"
+                                    style="height:40px ; width:30px; ;">
+                                POCO Android
+                            </td>
+                            <td data-label="Brand">Camoro</td>
+                            <td data-label="Price">$14.00</td>
+                            <td data-label="Mo. Sales">134</td>
+                            <td data-label="D. Sales">134</td>
+                            <td data-label="Mo. Revenue">134</td>
+                            <td data-label="Date First Available">21-06-2022</td>
+                            <td data-label="Net">$90</td>
+                        </tr>
+                        <tr style="font-family:poppins ;">
+                            <td style="padding-left: 50px;" data-label="#">3</td>
+                            <td data-label="Actions"><img src="assets/add (2).png">
+                                <img src="assets/key (2).png">
+                                <img src="assets/tag (2).png">
+                            </td>
+                            <td data-label="Product Name"><img src="assets/mobile.jpg"
+                                    style="height:40px ; width:30px; ">
+                                POCO Android
+                            </td>
+                            <td data-label="Brand">Camoro</td>
+                            <td data-label="Price">$14.00</td>
+                            <td data-label="Mo. Sales">134</td>
+                            <td data-label="D. Sales">134</td>
+                            <td data-label="Mo. Revenue">134</td>
+                            <td data-label="Date First Available">21-06-2022</td>
+                            <td data-label="Net">$90</td>
+                        </tr>
+                        <tr style="font-family:poppins ;">
+                            <td style="padding-left: 50px;" data-label="#">4</td>
+                            <td data-label="Actions"><img src="assets/add (2).png">
+                                <img src="assets/key (2).png">
+                                <img src="assets/tag (2).png">
+                            </td>
+                            <td data-label="Product Name"><img src="assets/mobile.jpg"
+                                    style="height:40px ; width:30px; ;">
+                                POCO Android
+                            </td>
+                            <td data-label="Brand">Camoro</td>
+                            <td data-label="Price">$14.00</td>
+                            <td data-label="Mo. Sales">134</td>
+                            <td data-label="D. Sales">134</td>
+                            <td data-label="Mo. Revenue">134</td>
+                            <td data-label="Date First Available">21-06-2022</td>
+                            <td data-label="Net">$90</td>
+                        </tr>
+                        <tr style="font-family:poppins ;">
+                            <td style="padding-left: 50px ; " data-label="#">5</td>
+                            <td data-label="Actions"><img src="assets/add (2).png">
+                                <img src="assets/key (2).png">
+                                <img src="assets/tag (2).png">
+                            </td>
+                            <td data-label="Product Name"><img src="assets/mobile.jpg"
+                                    style="height:40px ; width:30px; ;">
+                                POCO Android
+                            </td>
+                            <td data-label="Brand">Camoro</td>
+                            <td data-label="Price">$14.00</td>
+                            <td data-label="Mo. Sales">134</td>
+                            <td data-label="D. Sales">134</td>
+                            <td data-label="Mo. Revenue">134</td>
+                            <td data-label="Date First Available">21-06-2022</td>
+                            <td data-label="Net">$90</td>
+                        </tr>
+                        <tr style="font-family:poppins ;">
+                            <td style="padding-left: 50px ; " data-label="#">6</td>
+                            <td data-label="Actions"><img src="assets/add (2).png">
+                                <img src="assets/key (2).png">
+                                <img src="assets/tag (2).png">
+                            </td>
+                            <td data-label="Product Name"><img src="assets/mobile.jpg"
+                                    style="height:40px ; width:30px; ;">
+                                POCO Android
+                            </td>
+                            <td data-label="Brand">Camoro</td>
+                            <td data-label="Price">$14.00</td>
+                            <td data-label="Mo. Sales">134</td>
+                            <td data-label="D. Sales">134</td>
+                            <td data-label="Mo. Revenue">134</td>
+                            <td data-label="Date First Available">21-06-2022</td>
+                            <td data-label="Net">$90</td>
+                        </tr>
+                        <tr style="font-family:poppins ;">
+                            <td style="padding-left: 50px ; " data-label="#">7</td>
+                            <td data-label="Actions"><img src="assets/add (2).png">
+                                <img src="assets/key (2).png">
+                                <img src="assets/tag (2).png">
+                            </td>
+                            <td data-label="Product Name"><img src="assets/mobile.jpg"
+                                    style="height:40px ; width:30px; ;">
+                                POCO Android
+                            </td>
+                            <td data-label="Brand">Camoro</td>
+                            <td data-label="Price">$14.00</td>
+                            <td data-label="Mo. Sales">134</td>
+                            <td data-label="D. Sales">134</td>
+                            <td data-label="Mo. Revenue">134</td>
+                            <td data-label="Date First Available">21-06-2022</td>
+                            <td data-label="Net">$90</td>
+                        </tr>
+
+
+                    </table>
+
+
+
+
+
+
+                </body>
+                <div class="load" style=" display: flex;">
+                    <h1 style="font-size: 16px; position: absolute;
+           
+            left: 320px;
+            top: 580px;
+            
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+            /* identical to box height */
+            
+            
+            color: #000000;
+            ">Showing Result 1-40</h1>
+                    <a href="" class="hero-btn red-btn">Load More</a>
+                </div>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </div>
+
+</body>

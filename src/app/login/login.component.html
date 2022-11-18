@@ -1,0 +1,58 @@
+<body>
+    <div class="wrapper">
+        <div class="logo"></div>
+        <img src="assets/Banner.png">
+
+        <div class="title" style="color:#003167 ;">Login</div>
+
+        <h2 style="color: #003167;
+  
+        opacity: 0.7;">please signin to continue.</h2>
+
+        <form action="#">
+            <div class="field" style="position: absolute;
+            left: 2%;
+            right: 26.67%;
+            top: 32.38%;
+            bottom: 44.63%;">
+                <input type="text" required>
+                <label style="color: #003167;
+  
+               ;"> example@gmail.com</label>
+            </div>
+            <div class="field" style="position: absolute;
+            left: 2%;
+            right: 26.67%;
+            top: 48.32%;
+            bottom: 29.69%;">
+                <input type="password" required>
+                <label style="color: #003167;
+  
+                ">write Password</label>
+                <img src="assets/eye.png" style="position: absolute;
+                width: 36px;
+                height: 33px;
+                left: 390px;
+                top: 25px;">
+            </div>
+
+
+            <div class="field" style="position: absolute;
+            left: 2%;
+            right: 26.67%;
+            top: 64.32%;
+            bottom: 19.34%;
+            ">
+                <input type="submit" value="Login" routerLink='/dashboard' target="_self">
+            </div>
+            <div class="pass-link" style="left: 315px;
+            top: 464px; position:absolute; color: #003167;">Forgot Password</div>
+            <div class="signup-link" style="left: 280px;
+            top: 485px; position:absolute;color:#003167">Don't have an account?<a href="#" style="color:#0076FF ;">
+                    Signup</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+<router-outlet></router-outlet>
